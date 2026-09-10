@@ -17,7 +17,7 @@ class StarData:
 def magnitude_to_opacity(magnitude: float) -> float:
     if magnitude <= -1.0:
         return 1.0
-    return 0.673326467087 ** (magnitude + 1.0)
+    return (0x10 / 0xFF) ** ((magnitude + 1.0) / 7.5)
 
 
 def get_coordinates(latitude: float, longitude: float):
@@ -42,10 +42,14 @@ def get_stars():
         next(reader)
 
         for row in reader:
+            name = row[0]
+            if name.startswith("40 Eridani"):
+                continue
+
             try:
                 stars.append(
                     StarData(
-                        name=row[0],
+                        name,
                         longitude=float(row[21]),
                         declination=float(row[22]),
                         distance=float(row[23]),
