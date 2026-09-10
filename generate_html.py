@@ -65,14 +65,13 @@ def main():
     for star in sorted(get_stars(), key=lambda s: -s.magnitude):
         opacity = magnitude_to_opacity(star.magnitude)
 
-
         if star.declination >= 0.0:
-            x, y = get_coordinates(abs(star.declination), star.longitude)
+            x, y = get_coordinates(star.declination, star.longitude)
             star_html = f'<div class="star" title="{star.name}" style="left: {x * 100.0}%; top: {y * 100.0}%; opacity: {opacity};"></div>'
             north_hemisphere_html += star_html
 
         if star.declination <= 0.0:
-            x, y = get_coordinates(abs(star.declination), -star.longitude)
+            x, y = get_coordinates(-star.declination, -star.longitude)
             star_html = f'<div class="star" title="{star.name}" style="left: {x * 100.0}%; top: {y * 100.0}%; opacity: {opacity};"></div>'
             south_hemisphere_html += star_html
 
