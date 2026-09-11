@@ -8,6 +8,10 @@
         background-color: dimgray;
       }
 
+      h2 {
+        margin-bottom: 0;
+      }
+
       #hemispheres {
         display: flex;
         flex-wrap: wrap;
@@ -47,7 +51,7 @@
     </style>
   </head>
   <body>
-    <h1>Erid Star Chart</h1>
+    <h1>Erid Star Charts</h1>
     <section>
       <h2>North & South Hemispheres</h2>
       <div id="hemispheres">
@@ -59,11 +63,6 @@
         </div>
       </div>
     </section>
-    <section>
-      <h2>Orion</h2>
-      <div class="region" style="width: 26em; height: 31em;">
-        {{Orion}}
-      </div>
-    </section>
+    {{Constellations}}
   </body>
 </html>
