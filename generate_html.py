@@ -3,8 +3,8 @@
 import csv
 import json
 from dataclasses import dataclass
-from math import acos, atan2, cos, hypot, pi, sin, tan
-from typing import Any, Literal
+from math import acos, atan2, cos, pi, sin, tan
+from typing import Any
 
 
 @dataclass
@@ -22,7 +22,6 @@ class ConstellationInfo:
     name: str
     declination: tuple[float, float]
     longitude: tuple[float, float]
-    shape: Literal["rectangle"]
     description: str | None
 
     @classmethod
@@ -34,7 +33,6 @@ class ConstellationInfo:
         name = d["name"]
         declination = d["declination"]
         longitude = d["longitude"]
-        shape = d["shape"]
 
         if (
             not isinstance(id, str)
@@ -67,77 +65,76 @@ class ConstellationInfo:
         ):
             raise ValueError("Invalid declination")
 
-        if shape not in ("rectangle",):
-            raise ValueError("Invalid shape")
+        return cls(id, name, tuple(declination), tuple(longitude), description)
 
-        return cls(id, name, tuple(declination), tuple(longitude), shape, description)
-
-    # FIXME: Something about this doesn't handle Ursa Major quite correctly
     def limit_coordinates(self):
-        match self.shape:
-            case "rectangle":
-                declination_range = self.declination[1] - self.declination[0]
-                longitude_range = self.longitude[1] - self.longitude[0]
+        if self.declination[1] == 90.0:
+            limit_x, _ = get_coordinates(self.declination[0], 0.0)
+            return (abs(limit_x), abs(limit_x))
+        if self.declination[0] == -90.0:
+            limit_x, _ = get_coordinates(-self.declination[1], 0.0)
+            return (abs(limit_x), abs(limit_x))
 
-                if self.declination[1] >= 0.0 and self.declination[0] <= 0.0:
-                    min_declination = 0.0
-                elif self.declination[1] < 0.0:
-                    min_declination = -self.declination[1]
-                else:
-                    min_declination = self.declination[0]
+        declination_range = self.declination[1] - self.declination[0]
+        longitude_range = self.longitude[1] - self.longitude[0]
 
-                longitude_range *= cos(pi * min_declination / 180.0)
+        if self.declination[1] >= 0.0 and self.declination[0] <= 0.0:
+            min_declination = 0.0
+        elif self.declination[1] < 0.0:
+            min_declination = -self.declination[1]
+        else:
+            min_declination = self.declination[0]
 
-                limit_x, limit_y = get_coordinates(
-                    90.0 - hypot(declination_range / 2.0, longitude_range / 2.0),
-                    180.0 * atan2(declination_range, longitude_range) / pi,
-                )
+        longitude_range *= cos(pi * min_declination / 180.0)
 
-                return (abs(limit_x), abs(limit_y))
-        raise ValueError()
+        limit_x, _ = get_coordinates(90.0 - longitude_range / 2.0, 0.0)
+        _, limit_y = get_coordinates(90.0 - declination_range / 2.0, 90.0)
+
+        return (abs(limit_x), abs(limit_y))
 
     def element_style(self):
-        match self.shape:
-            case "rectangle":
-                declination_range = self.declination[1] - self.declination[0]
-                longitude_range = self.longitude[1] - self.longitude[0]
+        if self.declination[1] == 90.0:
+            size = 90.0 - self.declination[0]
+            return f"width: {size}em; height: {size}em;"
+        if self.declination[0] == -90.0:
+            size = 90 + self.declination[1]
+            return f"width: {size}em; height: {size}em;"
 
-                if self.declination[1] >= 0.0 and self.declination[0] <= 0.0:
-                    min_declination = 0.0
-                elif self.declination[1] < 0.0:
-                    min_declination = -self.declination[1]
-                else:
-                    min_declination = self.declination[0]
+        declination_range = self.declination[1] - self.declination[0]
+        longitude_range = self.longitude[1] - self.longitude[0]
 
-                return f"width: {longitude_range * cos(pi * min_declination / 180.0)}em; height: {declination_range}em;"
-        raise ValueError()
+        if self.declination[1] >= 0.0 and self.declination[0] <= 0.0:
+            min_declination = 0.0
+        elif self.declination[1] < 0.0:
+            min_declination = -self.declination[1]
+        else:
+            min_declination = self.declination[0]
+
+        longitude_range *= cos(pi * min_declination / 180.0)
+
+        return f"width: {longitude_range}em; height: {declination_range}em;"
 
     def contains_point(self, x: float, y: float):
-        match self.shape:
-            case "rectangle":
-                limit_x, limit_y = self.limit_coordinates()
-                return abs(x) <= limit_x and abs(y) <= limit_y
-        raise ValueError()
+        limit_x, limit_y = self.limit_coordinates()
+        return abs(x) <= limit_x and abs(y) <= limit_y
 
     def longitude_offset(self):
+        if self.declination[0] == -90.0 or self.declination[1] == 90.0:
+            return 0.0
         return (self.longitude[0] + self.longitude[1]) / 2.0 - 90.0
 
     def alpha_degrees(self):
-        match self.shape:
-            case "rectangle":
-                return 90.0 - (self.declination[0] + self.declination[1]) / 2.0
-        raise ValueError()
+        if self.declination[1] == 90.0:
+            return 0.0
+        if self.declination[0] == -90.0:
+            return 180.0
+
+        return 90.0 - (self.declination[0] + self.declination[1]) / 2.0
 
     def description_html(self):
         if self.description is None:
             return ""
         return f"<p>{self.description}</p>"
-
-    def classnames(self) -> str:
-        match self.shape:
-            case "rectangle":
-                return "region"
-        raise ValueError()
 
 
 def magnitude_to_opacity(magnitude: float) -> float:
@@ -235,8 +232,12 @@ def main():
                     ] += f'<div class="star" title="{star.name}" style="left: {html_left}%; top: {html_top}%; opacity: {opacity};"></div>'
 
     constellations_html = "".join(
-        f'<section id="{c.id}"><h2>{c.name}</h2><div class="{c.classnames()}" style="{c.element_style()}">{constellations_inner_htmls[c.id]}</div>{c.description_html()}</section>'
+        f'<section id="{c.id}"><h2>{c.name}</h2><div class="region" style="{c.element_style()}">{constellations_inner_htmls[c.id]}</div>{c.description_html()}</section>'
         for c in constellations
+    )
+
+    contents_html = "".join(
+        f'<li><a href="#{c.id}">{c.name}</a></li>' for c in constellations
     )
 
     template = ""
@@ -244,7 +245,8 @@ def main():
         template = templatefile.read()
 
     full_html = (
-        template.replace("{{NorthHemisphere}}", north_hemisphere_html)
+        template.replace("{{Contents}}", contents_html)
+        .replace("{{NorthHemisphere}}", north_hemisphere_html)
         .replace("{{SouthHemisphere}}", south_hemisphere_html)
         .replace("{{Constellations}}", constellations_html)
     )

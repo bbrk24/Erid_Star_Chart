@@ -1,18 +1,23 @@
 [
   {
+    "id": "ursa-major-canes-venatici",
+    "name": "Ursa Major and Canes Venatici",
+    "declination": [-80, -41],
+    "longitude": [-50, 16],
+    "description": "Containing several nearby stars, Ursa Major is distorted quite badly. &xi; Ursae Majoris is pushed out of the constellation, and Pollux (seen in Gemini from Earth) makes an appearance. &alpha; Canum Venaticorum is a naked-eye double."
+  },
+  {
     "id": "orion",
     "name": "Orion",
-    "declination": [-27, 4],
+    "declination": [-27, 5],
     "longitude": [74, 100],
-    "shape": "rectangle",
     "description": "Orion consists mostly of distant stars, so its shape is largely intact (here shown upside-down, since Erid's north-south axis is roughly antiparallel Earth's). Only &chi;<sup>1</sup> Orionis and &pi;<sup>3</sup> Orionis are close enough to be shifted out of the constellation."
   },
   {
-    "id": "ursa-major-canes-venatici",
-    "name": "Ursa Major and Canes Venatici",
-    "declination": [-79, -41],
-    "longitude": [-54, 32],
-    "shape": "rectangle",
-    "description": "Containing several nearby stars, Ursa Major is distorted quite badly. &xi; Ursae Majoris is pushed out of the constellation, and Pollux (seen in Gemini from Earth) makes an appearance. &alpha; Canum Venaticorum is a naked-eye double."
+    "id": "octans-chamaeleon",
+    "name": "Octans and Chamaeleon",
+    "declination": [68, 90],
+    "longitude": [0, 360],
+    "description": "Octans and Chamaeleon contain no bright stars, so this region of sky appears nearly empty &mdash; though &alpha; Trianguli Australis is on the border of this region. Erid has no easily visible north pole star."
   }
 ]
