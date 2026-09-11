@@ -6,6 +6,9 @@
     <style>
       body {
         background-color: dimgray;
+      }
+
+      #hemispheres {
         display: flex;
         flex-wrap: wrap;
       }
@@ -29,23 +32,38 @@
         position: relative;
       }
 
-      .hemisphere {
-        width: calc(max(50vw, 50vh) - 2em);
-        height: calc(max(50vw, 50vh) - 2em);
+      .region {
         border: 2px solid white;
-        border-radius: 50%;
         background-color: black;
         margin: 0.5em;
         display: block;
       }
+
+      .hemisphere {
+        width: calc(max(50vw, 50vh) - 2em);
+        height: calc(max(50vw, 50vh) - 2em);
+        border-radius: 50%;
+      }
     </style>
   </head>
   <body>
-    <div class="hemisphere" id="north-hemisphere">
-      {{NorthHemisphere}}
-    </div>
-    <div class="hemisphere" id="south-hemisphere">
-      {{SouthHemisphere}}
-    </div>
+    <h1>Erid Star Chart</h1>
+    <section>
+      <h2>North & South Hemispheres</h2>
+      <div id="hemispheres">
+        <div class="region hemisphere">
+          {{NorthHemisphere}}
+        </div>
+        <div class="region hemisphere">
+          {{SouthHemisphere}}
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>Orion</h2>
+      <div class="region" style="width: 26em; height: 31em;">
+        {{Orion}}
+      </div>
+    </section>
   </body>
 </html>
