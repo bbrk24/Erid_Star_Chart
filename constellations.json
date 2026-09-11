@@ -1,5 +1,11 @@
 [
   {
+    "id": "eridanus-fornax",
+    "name": "Eridanus and Fornax",
+    "declination": [-3, 51],
+    "longitude": [90, 134]
+  },
+  {
     "id": "ursa-major-canes-venatici",
     "name": "Ursa Major and Canes Venatici",
     "declination": [-80, -41],
@@ -19,5 +25,12 @@
     "declination": [68, 90],
     "longitude": [0, 360],
     "description": "Octans and Chamaeleon contain no bright stars, so this region of sky appears nearly empty &mdash; though &alpha; Trianguli Australis is on the border of this region. Erid has no easily visible north pole star."
+  },
+  {
+    "id": "ursa-minor",
+    "name": "Ursa Minor",
+    "declination": [-84, -63],
+    "longitude": [243, 284],
+    "description": "Ursa Minor fares even worse than its larger sibling. The familiar shape of the &quot;dipper&quot; is nowhere to be seen, and the constellation is not circumpolar."
   }
 ]
