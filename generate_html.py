@@ -108,9 +108,15 @@ class ConstellationInfo:
                     min_declination = -self.declination[1]
                 else:
                     min_declination = self.declination[0]
-                
 
                 return f"width: {longitude_range * cos(pi * min_declination / 180.0)}em; height: {declination_range}em;"
+        raise ValueError()
+
+    def contains_point(self, x: float, y: float):
+        match self.shape:
+            case "rectangle":
+                limit_x, limit_y = self.limit_coordinates()
+                return abs(x) <= limit_x and abs(y) <= limit_y
         raise ValueError()
 
     def longitude_offset(self):
@@ -120,15 +126,6 @@ class ConstellationInfo:
         match self.shape:
             case "rectangle":
                 return 90.0 - (self.declination[0] + self.declination[1]) / 2.0
-        raise ValueError()
-
-    def theta_limit(self):
-        match self.shape:
-            case "rectangle":
-                declination_range = self.declination[1] - self.declination[0]
-                longitude_range = self.longitude[1] - self.longitude[0]
-
-                return pi * hypot(declination_range / 2.0, longitude_range / 2.0) / 180
         raise ValueError()
 
     def description_html(self):
@@ -222,16 +219,15 @@ def main():
             theta_prime = acos(
                 sin(theta) * sin(phi) * sin(alpha) + cos(theta) * cos(alpha)
             )
-            if theta_prime <= constellation.theta_limit():
+            if theta_prime < pi / 2.0:
                 y_prime = sin(theta) * sin(phi) * cos(alpha) - cos(theta) * sin(alpha)
                 x_prime = sin(theta) * cos(phi)
                 phi_prime = atan2(y_prime, x_prime)
                 x, y = get_coordinates(
                     90.0 - 180.0 * theta_prime / pi, 180.0 * phi_prime / pi
                 )
-
-                limit_x, limit_y = constellation.limit_coordinates()
-                if abs(x) <= limit_x and abs(y) <= limit_y:
+                if constellation.contains_point(x, y):
+                    limit_x, limit_y = constellation.limit_coordinates()
                     html_left = (x / limit_x + 1.0) * 50.0
                     html_top = (y / limit_y + 1.0) * 50.0
                     constellations_inner_htmls[
