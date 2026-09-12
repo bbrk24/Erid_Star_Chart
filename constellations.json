@@ -13,11 +13,18 @@
     "description": "Containing several nearby stars, Ursa Major is distorted, but still recognizable. &xi; Ursae Majoris is pushed out of the constellation, and Pollux (seen in Gemini from Earth) makes an appearance. &alpha; Canum Venaticorum is a naked-eye double."
   },
   {
+    "id": "draco-ursa-minor",
+    "name": "Draco and Ursa Minor",
+    "declination": [-84, -41],
+    "longitude": [242, 282],
+    "description": "Ursa Minor fares worse than its larger sibling. The familiar shape of the &quot;dipper&quot; is nowhere to be seen, and the constellation is not circumpolar. Draco's meandering body is the same shape, but its head is more triangular, as &nu; Draconis is relatively close to Sol."
+  },
+  {
     "id": "orion",
     "name": "Orion",
     "declination": [-27, 5],
     "longitude": [74, 100],
-    "description": "Orion consists mostly of distant stars, so its shape is largely intact (here shown upside-down, since Erid's north-south axis is roughly antiparallel Earth's). Only &chi;<sup>1</sup> Orionis and &pi;<sup>3</sup> Orionis are close enough to be shifted out of the constellation."
+    "description": "Orion consists mostly of distant stars, so its shape is intact (here shown upside-down, since Erid's north-south axis is roughly antiparallel Earth's). Only &chi;<sup>1</sup> Orionis and &pi;<sup>3</sup> Orionis are close enough to be shifted out of the constellation."
   },
   {
     "id": "camelopardalis",
@@ -39,13 +46,6 @@
     "declination": [68, 90],
     "longitude": [0, 360],
     "description": "Octans and Chamaeleon contain no bright stars, so this region of sky appears nearly empty &mdash; though &alpha; Trianguli Australis is on the border of this region. Erid has no easily visible north pole star."
-  },
-  {
-    "id": "ursa-minor",
-    "name": "Ursa Minor",
-    "declination": [-84, -63],
-    "longitude": [243, 284],
-    "description": "Ursa Minor fares even worse than its larger sibling. The familiar shape of the &quot;dipper&quot; is nowhere to be seen, and the constellation is not circumpolar."
   },
   {
     "id": "canis-major",
