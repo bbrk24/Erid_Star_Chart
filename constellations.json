@@ -3,7 +3,7 @@
     "id": "eridanus-fornax",
     "name": "Eridanus and Fornax",
     "declination": [-3, 51],
-    "longitude": [90, 134]
+    "longitude": [90, 132]
   },
   {
     "id": "ursa-major-canes-venatici",
@@ -32,5 +32,12 @@
     "declination": [-84, -63],
     "longitude": [243, 284],
     "description": "Ursa Minor fares even worse than its larger sibling. The familiar shape of the &quot;dipper&quot; is nowhere to be seen, and the constellation is not circumpolar."
+  },
+  {
+    "id": "canis-major",
+    "name": "Canis Major",
+    "declination": [3, 26],
+    "longitude": [56, 72],
+    "description": "Though most of the individual stars of Canis Major are distant, its brightest star, Sirius, is rather close to Sol. You could still draw a dog with the visible stars, in a different orientation from Earth&apos;s."
   }
 ]
