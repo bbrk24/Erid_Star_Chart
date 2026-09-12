@@ -138,9 +138,9 @@ class ConstellationInfo:
 
 
 def magnitude_to_opacity(magnitude: float) -> float:
-    if magnitude <= -1.0:
+    if magnitude <= 0.5:
         return 1.0
-    return (0x10 / 0xFF) ** ((magnitude + 1.0) / 7.5)
+    return (0x10 / 0xFF) ** ((magnitude - 0.5) / 6.0)
 
 
 def get_coordinates(latitude: float, longitude: float):
