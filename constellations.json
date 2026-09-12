@@ -20,6 +20,13 @@
     "description": "Orion consists mostly of distant stars, so its shape is largely intact (here shown upside-down, since Erid's north-south axis is roughly antiparallel Earth's). Only &chi;<sup>1</sup> Orionis and &pi;<sup>3</sup> Orionis are close enough to be shifted out of the constellation."
   },
   {
+    "id": "camelopardalis",
+    "name": "Camelopardalis",
+    "declination": [-88, -57],
+    "longitude": [110, 152],
+    "description": "The faint constellation of Camelopardalis is Erid's southernmost constellation."
+  },
+  {
     "id": "cepheus",
     "name": "Cepheus",
     "declination": [-68, -45],
