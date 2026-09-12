@@ -10,7 +10,7 @@
     "name": "Ursa Major and Canes Venatici",
     "declination": [-80, -41],
     "longitude": [-50, 16],
-    "description": "Containing several nearby stars, Ursa Major is distorted quite badly. &xi; Ursae Majoris is pushed out of the constellation, and Pollux (seen in Gemini from Earth) makes an appearance. &alpha; Canum Venaticorum is a naked-eye double."
+    "description": "Containing several nearby stars, Ursa Major is distorted, but still recognizable. &xi; Ursae Majoris is pushed out of the constellation, and Pollux (seen in Gemini from Earth) makes an appearance. &alpha; Canum Venaticorum is a naked-eye double."
   },
   {
     "id": "orion",
@@ -18,6 +18,13 @@
     "declination": [-27, 5],
     "longitude": [74, 100],
     "description": "Orion consists mostly of distant stars, so its shape is largely intact (here shown upside-down, since Erid's north-south axis is roughly antiparallel Earth's). Only &chi;<sup>1</sup> Orionis and &pi;<sup>3</sup> Orionis are close enough to be shifted out of the constellation."
+  },
+  {
+    "id": "cepheus",
+    "name": "Cepheus",
+    "declination": [-68, -45],
+    "longitude": [198, 240],
+    "description": "Though Cepheus contains some distant stars, &alpha; Cephei and &gamma; Cephei are close enough that the pentagon is unrecognizable. &beta; Cassiopeiae is shifted into this constellation and outshines all the stars we know of as Cepheus."
   },
   {
     "id": "octans-chamaeleon",
