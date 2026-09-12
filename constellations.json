@@ -41,6 +41,13 @@
     "description": "Though Cepheus contains some distant stars, &alpha; Cephei and &gamma; Cephei are close enough that the pentagon is unrecognizable. &beta; Cassiopeiae is shifted into this constellation and outshines all the stars we know of as Cepheus."
   },
   {
+    "id": "cassiopeia",
+    "name": "Cassiopeia",
+    "declination": [-75, -41],
+    "longitude": [163, 190],
+    "description": "Though half of the famous &quot;W&quot; of Cassiopeia is intact, &epsilon; Cassiopeiae is in a significantly different spot, and &beta; Cassiopeiae is shifted out of the constellation entirely."
+  },
+  {
     "id": "octans-chamaeleon",
     "name": "Octans and Chamaeleon",
     "declination": [68, 90],
