@@ -95,10 +95,10 @@ class ConstellationInfo:
     def element_style(self):
         if self.declination[1] == 90.0:
             size = 90.0 - self.declination[0]
-            return f"width: {size}em; height: {size}em;"
+            return f"width: calc(var(--deg) * {size}); height: calc(var(--deg) * {size});"
         if self.declination[0] == -90.0:
             size = 90 + self.declination[1]
-            return f"width: {size}em; height: {size}em;"
+            return f"width: calc(var(--deg) * {size}); height: calc(var(--deg) * {size});"
 
         declination_range = self.declination[1] - self.declination[0]
         longitude_range = self.longitude[1] - self.longitude[0]
@@ -112,7 +112,7 @@ class ConstellationInfo:
 
         longitude_range *= cos(pi * min_declination / 180.0)
 
-        return f"width: {longitude_range}em; height: {declination_range}em;"
+        return f"width: calc(var(--deg) * {longitude_range}); height: calc(var(--deg) * {declination_range});"
 
     def contains_point(self, x: float, y: float):
         limit_x, limit_y = self.limit_coordinates()

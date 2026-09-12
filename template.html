@@ -4,8 +4,13 @@
     <meta charset="UTF-8" />
     <title>Erid Star Charts</title>
     <style>
+      :root {
+        --deg: min(calc((100vw - 2em - 4px) / 50), calc((100vh - 1em - 4px) / 54));
+      }
+
       body {
         background-color: dimgray;
+        margin: 0.5em;
       }
 
       h2 {
@@ -44,8 +49,8 @@
       }
 
       .hemisphere {
-        width: calc(max(50vw, 50vh) - 2em);
-        height: calc(max(50vw, 50vh) - 2em);
+        width: calc(max(50vw, 50vh) - 1.5em - 4px);
+        height: calc(max(50vw, 50vh) - 1.5em - 4px);
         border-radius: 50%;
       }
     </style>
