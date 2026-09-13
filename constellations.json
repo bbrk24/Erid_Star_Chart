@@ -13,6 +13,13 @@
     "description": "Containing several nearby stars, Ursa Major is distorted, but still recognizable. &xi; Ursae Majoris is pushed out of the constellation, and Pollux (seen in Gemini from Earth) makes an appearance. &alpha; Canum Venaticorum is a naked-eye double."
   },
   {
+    "id": "centaurus-crux",
+    "name": "Centaurus and Crux",
+    "declination": [24, 58],
+    "longitude": [314, 356],
+    "description": "Centaurus contains several stars close to Sol, most famously &alpha; Centauri, which is now nowhere to be seen. Some parts of the centaur are relatively okay, some are distorted quite badly, and some are missing entirely. Crux fares even worse, with &gamma; Crucis being shifted into the centaur's lower torso."
+  },
+  {
     "id": "draco-ursa-minor",
     "name": "Draco and Ursa Minor",
     "declination": [-84, -41],
