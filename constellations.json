@@ -1,5 +1,11 @@
 [
   {
+    "id": "hydra-crater-corvus-sextans",
+    "name": "Hydra, Crater, Corvus, and Sextans",
+    "declination": [-19, 29],
+    "longitude": [-47, 38]
+  },
+  {
     "id": "eridanus-fornax",
     "name": "Eridanus and Fornax",
     "declination": [-3, 51],
