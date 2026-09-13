@@ -67,5 +67,23 @@
     "declination": [3, 26],
     "longitude": [56, 72],
     "description": "Though most of the individual stars of Canis Major are distant, its brightest star, Sirius, is rather close to Sol. You could still draw a dog with the visible stars, in a different orientation from Earth&apos;s."
+  },
+  {
+    "id": "circinus",
+    "name": "Circinus",
+    "declination": [48, 61],
+    "longitude": [308, 318]
+  },
+  {
+    "id": "equuleus",
+    "name": "Equuleus",
+    "declination": [-2, 5],
+    "longitude": [215, 226]
+  },
+  {
+    "id": "sagitta",
+    "name": "Sagitta",
+    "declination": [-11, -7],
+    "longitude": [231, 237]
   }
 ]

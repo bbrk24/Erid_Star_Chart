@@ -20,8 +20,8 @@ class StarData:
 class ConstellationInfo:
     id: str
     name: str
-    declination: tuple[float, float]
-    longitude: tuple[float, float]
+    declination: tuple[int, int]
+    longitude: tuple[int, int]
     description: str | None
 
     @classmethod
@@ -50,37 +50,45 @@ class ConstellationInfo:
 
         if (
             len(longitude) != 2
-            or longitude[0] <= -360.0
-            or longitude[1] > 360.0
+            or longitude[0] <= -360
+            or longitude[1] > 360
             or longitude[0] >= longitude[1]
-            or longitude[1] - longitude[0] > 360.0
+            or longitude[1] - longitude[0] > 360
         ):
             raise ValueError("Invalid longitude")
 
         if (
             len(declination) != 2
-            or declination[0] < -90.0
-            or declination[1] > 90.0
+            or declination[0] < -90
+            or declination[1] > 90
             or declination[0] >= declination[1]
         ):
             raise ValueError("Invalid declination")
 
+        if (
+            not isinstance(longitude[0], int)
+            or not isinstance(longitude[1], int)
+            or not isinstance(declination[0], int)
+            or not isinstance(declination[1], int)
+        ):
+            raise TypeError()
+
         return cls(id, name, tuple(declination), tuple(longitude), description)
 
     def limit_coordinates(self):
-        if self.declination[1] == 90.0:
+        if self.declination[1] == 90:
             limit_x, _ = get_coordinates(self.declination[0], 0.0)
             return (abs(limit_x), abs(limit_x))
-        if self.declination[0] == -90.0:
+        if self.declination[0] == -90:
             limit_x, _ = get_coordinates(-self.declination[1], 0.0)
             return (abs(limit_x), abs(limit_x))
 
         declination_range = self.declination[1] - self.declination[0]
-        longitude_range = self.longitude[1] - self.longitude[0]
+        longitude_range = float(self.longitude[1] - self.longitude[0])
 
-        if self.declination[1] >= 0.0 and self.declination[0] <= 0.0:
-            min_declination = 0.0
-        elif self.declination[1] < 0.0:
+        if self.declination[1] >= 0 and self.declination[0] <= 0:
+            min_declination = 0
+        elif self.declination[1] < 0:
             min_declination = -self.declination[1]
         else:
             min_declination = self.declination[0]
@@ -93,19 +101,23 @@ class ConstellationInfo:
         return (abs(limit_x), abs(limit_y))
 
     def element_style(self):
-        if self.declination[1] == 90.0:
-            size = 90.0 - self.declination[0]
-            return f"width: calc(var(--deg) * {size}); height: calc(var(--deg) * {size});"
-        if self.declination[0] == -90.0:
+        if self.declination[1] == 90:
+            size = 90 - self.declination[0]
+            return (
+                f"width: calc(var(--deg) * {size}); height: calc(var(--deg) * {size});"
+            )
+        if self.declination[0] == -90:
             size = 90 + self.declination[1]
-            return f"width: calc(var(--deg) * {size}); height: calc(var(--deg) * {size});"
+            return (
+                f"width: calc(var(--deg) * {size}); height: calc(var(--deg) * {size});"
+            )
 
         declination_range = self.declination[1] - self.declination[0]
         longitude_range = self.longitude[1] - self.longitude[0]
 
-        if self.declination[1] >= 0.0 and self.declination[0] <= 0.0:
-            min_declination = 0.0
-        elif self.declination[1] < 0.0:
+        if self.declination[1] >= 0 and self.declination[0] <= 0:
+            min_declination = 0
+        elif self.declination[1] < 0:
             min_declination = -self.declination[1]
         else:
             min_declination = self.declination[0]
@@ -119,14 +131,14 @@ class ConstellationInfo:
         return abs(x) <= limit_x and abs(y) <= limit_y
 
     def longitude_offset(self):
-        if self.declination[0] == -90.0 or self.declination[1] == 90.0:
+        if self.declination[0] == -90 or self.declination[1] == 90:
             return 0.0
         return (self.longitude[0] + self.longitude[1]) / 2.0 - 90.0
 
     def alpha_degrees(self):
-        if self.declination[1] == 90.0:
+        if self.declination[1] == 90:
             return 0.0
-        if self.declination[0] == -90.0:
+        if self.declination[0] == -90:
             return 180.0
 
         return 90.0 - (self.declination[0] + self.declination[1]) / 2.0
