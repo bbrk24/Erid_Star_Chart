@@ -19,6 +19,13 @@
     "description": "Containing several nearby stars, Ursa Major is distorted, but still recognizable. &xi; Ursae Majoris is pushed out of the constellation, and Pollux (seen in Gemini from Earth) makes an appearance. &alpha; Canum Venaticorum is a naked-eye double."
   },
   {
+    "id": "cetus",
+    "name": "Cetus",
+    "declination": [-9, 29],
+    "longitude": [125, 169],
+    "description": "The shape of Cetus is largely intact, with a couple nearby stars (including &mu; Ceti and &tau; Ceti) shifted out of the constellation."
+  },
+  {
     "id": "virgo",
     "name": "Virgo",
     "declination": [-18, 11],
