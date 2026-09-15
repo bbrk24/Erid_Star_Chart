@@ -26,6 +26,13 @@
     "description": "The shape of Cetus is largely intact, with a couple nearby stars (including &mu; Ceti and &tau; Ceti) shifted out of the constellation."
   },
   {
+    "id": "pegasus",
+    "name": "Pegasus",
+    "declination": [-25, 6],
+    "longitude": [169, 222],
+    "description": "Alpheratz (technically in Andromeda, at least by Earth's definition) is shifted quite severely, as to make the famous &quot;square of Pegasus&quot; no longer resemble a square. &theta; Pegasi is similarly nearby, but overall the constellation is not distorted too badly."
+  },
+  {
     "id": "virgo",
     "name": "Virgo",
     "declination": [-18, 11],
