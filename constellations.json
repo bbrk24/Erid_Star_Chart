@@ -33,6 +33,13 @@
     "description": "Alpheratz (technically in Andromeda, at least by Earth's definition) is shifted quite severely, as to make the famous &quot;square of Pegasus&quot; no longer resemble a square. &theta; Pegasi is similarly nearby, but overall the constellation is not distorted too badly."
   },
   {
+    "id": "hercules",
+    "name": "Hercules",
+    "declination": [-45, -5],
+    "longitude": [253, 287],
+    "description": "&zeta; Herculis is close enough to Sol that its apparent drift throws off most interpretations of this constellation. Nearby stars shifted into here include Vega and Sol."
+  },
+  {
     "id": "virgo",
     "name": "Virgo",
     "declination": [-18, 11],
@@ -54,11 +61,10 @@
     "description": "Ursa Minor fares worse than its larger sibling. The familiar shape of the &quot;dipper&quot; is nowhere to be seen, and the constellation is not circumpolar. Draco's meandering body is the same shape, but its head is more triangular, as &nu; Draconis is relatively close to Sol."
   },
   {
-    "id": "hercules",
-    "name": "Hercules",
-    "declination": [-45, -7],
-    "longitude": [253, 286],
-    "description": "&zeta; Herculis is close enough to Sol that its apparent drift throws off most interpretations of this constellation. Vega is shifted into here from Lyra."
+    "id": "aquarius",
+    "name": "Aquarius",
+    "declination": [8, 32],
+    "longitude": [175, 223]
   },
   {
     "id": "orion",
