@@ -19,6 +19,13 @@
     "description": "Containing several nearby stars, Ursa Major is distorted, but still recognizable. &xi; Ursae Majoris is pushed out of the constellation, and Pollux (seen in Gemini from Earth) makes an appearance. &alpha; Canum Venaticorum is a naked-eye double."
   },
   {
+    "id": "pisces",
+    "name": "Pisces",
+    "declination": [-27, 15],
+    "longitude": [143, 189],
+    "description": "The &quot;circlet&quot; of piscis austrinis is unrecognizable, with &gamma; Piscium drifting to the other side of &beta; Piscium, and &iota; Piscium being shifted outside the constellation entirely. The rest of the constellation is fairly intact."
+  },
+  {
     "id": "cetus",
     "name": "Cetus",
     "declination": [-9, 29],
@@ -37,11 +44,11 @@
     "name": "Hercules",
     "declination": [-45, -5],
     "longitude": [253, 287],
-    "description": "&zeta; Herculis is close enough to Sol that its apparent drift throws off most interpretations of this constellation. Nearby stars shifted into here include Vega and Sol."
+    "description": "&zeta; Herculis is close enough that its apparent drift throws off most interpretations of this constellation. Nearby stars shifted into here include Vega and Sol."
   },
   {
-    "id": "leo-sextans",
-    "name": "Leo and Sextans",
+    "id": "leo",
+    "name": "Leo",
     "declination": [-40, -5],
     "longitude": [-15, 23],
     "description": "Leo contains several nearby stars and its shape is unrecognizable."
