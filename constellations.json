@@ -40,6 +40,13 @@
     "description": "&zeta; Herculis is close enough to Sol that its apparent drift throws off most interpretations of this constellation. Nearby stars shifted into here include Vega and Sol."
   },
   {
+    "id": "leo-sextans",
+    "name": "Leo and Sextans",
+    "declination": [-40, -5],
+    "longitude": [-15, 23],
+    "description": "Leo contains several nearby stars and its shape is unrecognizable."
+  },
+  {
     "id": "virgo",
     "name": "Virgo",
     "declination": [-18, 11],
@@ -59,6 +66,13 @@
     "declination": [-84, -41],
     "longitude": [242, 282],
     "description": "Ursa Minor fares worse than its larger sibling. The familiar shape of the &quot;dipper&quot; is nowhere to be seen, and the constellation is not circumpolar. Draco's meandering body is the same shape, but its head is more triangular, as &nu; Draconis is relatively close to Sol."
+  },
+  {
+    "id": "bootes",
+    "name": "Bo&ouml;tes",
+    "declination": [-51, -9],
+    "longitude": [290, 318],
+    "description": "Bo&ouml;tes is nearly on the opposite side of Sol from Erid, so even the nearby stars stay in the constellation &mdash; even if its shape is distorted."
   },
   {
     "id": "aquarius",
