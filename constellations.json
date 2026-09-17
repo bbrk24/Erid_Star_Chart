@@ -95,6 +95,13 @@
     "description": "Orion consists mostly of distant stars, so its shape is intact (here shown upside-down, since Erid's north-south axis is roughly antiparallel Earth's). Only &chi;<sup>1</sup> Orionis and &pi;<sup>3</sup> Orionis are close enough to be shifted out of the constellation."
   },
   {
+    "id": "sagittarius",
+    "name": "Sagittarius",
+    "declination": [23, 52],
+    "longitude": [235, 266],
+    "description": "Both the &quot;teapot&quot; and Terebellum are unrecognizable. Two pairs of stars which are clearly distinct from Earth (&sigma; Sagittarii and &tau; Sagittarii; &zeta; Sagittarii and &phi; Sagittarii) form visual doubles."
+  },
+  {
     "id": "camelopardalis",
     "name": "Camelopardalis",
     "declination": [-88, -57],
