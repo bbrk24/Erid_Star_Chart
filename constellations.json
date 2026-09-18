@@ -88,6 +88,13 @@
     "longitude": [175, 223]
   },
   {
+    "id": "taurus",
+    "name": "Taurus",
+    "declination": [-37, -8],
+    "longitude": [84, 123],
+    "description": "The main shape of Taurus is difficult to recognize, though &beta; Tauri is replaced by &pi;<sup>3</sup> Orionis. Taurus contains two significant star clusters, the Hyades and the Pleiades."
+  },
+  {
     "id": "orion",
     "name": "Orion",
     "declination": [-27, 5],
