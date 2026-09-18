@@ -12,11 +12,11 @@
     "longitude": [90, 132]
   },
   {
-    "id": "ursa-major-canes-venatici",
-    "name": "Ursa Major and Canes Venatici",
+    "id": "ursa-major",
+    "name": "Ursa Major",
     "declination": [-80, -41],
     "longitude": [-50, 16],
-    "description": "Containing several nearby stars, Ursa Major is distorted, but still recognizable. &xi; Ursae Majoris is pushed out of the constellation, and Pollux (seen in Gemini from Earth) makes an appearance. &alpha; Canum Venaticorum is a naked-eye double."
+    "description": "Containing several nearby stars, Ursa Major is distorted, but still recognizable. &xi; Ursae Majoris is pushed out of the constellation, and Pollux (seen in Gemini from Earth) makes an appearance."
   },
   {
     "id": "pisces",
@@ -75,11 +75,11 @@
     "description": "Ursa Minor fares worse than its larger sibling. The familiar shape of the &quot;dipper&quot; is nowhere to be seen, and the constellation is not circumpolar. Draco's meandering body is the same shape, but its head is more triangular, as &nu; Draconis is relatively close to Sol."
   },
   {
-    "id": "bootes",
-    "name": "Bo&ouml;tes",
+    "id": "bootes-canes-venatici",
+    "name": "Bo&ouml;tes and Canes Venatici",
     "declination": [-51, -9],
     "longitude": [290, 318],
-    "description": "Bo&ouml;tes is nearly on the opposite side of Sol from Erid, so even the nearby stars stay in the constellation &mdash; even if its shape is distorted."
+    "description": "Bo&ouml;tes is nearly on the opposite side of Sol from Erid, so even the nearby stars stay in the constellation &mdash; though its shape is distorted. &alpha; Canum Venaticorum is a naked-eye double."
   },
   {
     "id": "aquarius",
@@ -92,7 +92,7 @@
     "name": "Orion",
     "declination": [-27, 5],
     "longitude": [74, 100],
-    "description": "Orion consists mostly of distant stars, so its shape is intact (here shown upside-down, since Erid's north-south axis is roughly antiparallel Earth's). Only &chi;<sup>1</sup> Orionis and &pi;<sup>3</sup> Orionis are close enough to be shifted out of the constellation."
+    "description": "Orion consists mostly of distant stars, so its shape is completely intact (here shown upside-down, since Erid's north-south axis is roughly antiparallel Earth's). Only &chi;<sup>1</sup> Orionis and &pi;<sup>3</sup> Orionis are close enough to be shifted out of the constellation."
   },
   {
     "id": "sagittarius",
