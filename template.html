@@ -6,6 +6,7 @@
     <style>
       :root {
         --deg: min(calc((100vw - 2em - 4px) / 85), calc((100vh - 1em - 4px) / 54));
+        --star-color: white;
       }
 
       body {
@@ -33,7 +34,7 @@
         width: 3px;
         height: 3px;
         border-radius: 50%;
-        background-color: white;
+        background-color: var(--star-color);
         display: block;
         content: '';
         top: -1.5px;
@@ -58,6 +59,27 @@
       summary::marker {
         cursor: pointer;
       }
+
+      #legend {
+        margin-top: 1em;
+      }
+
+      #legend tbody {
+        color: var(--star-color);
+        padding: 0.5em;
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+      #legend .star {
+        left: 50%;
+      }
+
+      #legend td {
+        width: 1em;
+        height: 1em;
+        text-align: center;
+      }
     </style>
   </head>
   <body>
@@ -69,6 +91,12 @@
         {{Contents}}
       </ol>
     </details>
+    <table id="legend">
+      <caption>Star magnitude key</caption>
+      <tbody class="region" >
+        {{Legend}}
+      </tbody>
+    </table>
     <p>Mouse over any star to see its name.</p>
     <section id="north-south-hemispheres">
       <h2>North &amp; South Hemispheres</h2>

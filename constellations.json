@@ -47,6 +47,12 @@
     "description": "&zeta; Herculis is close enough that its apparent drift throws off most interpretations of this constellation. Nearby stars shifted into here include Vega and Sol."
   },
   {
+    "id": "andromeda",
+    "name": "Andromeda",
+    "declination": [-48, -17],
+    "longitude": [152, 197]
+  },
+  {
     "id": "leo",
     "name": "Leo",
     "declination": [-40, -5],

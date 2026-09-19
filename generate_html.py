@@ -252,6 +252,19 @@ def main():
         f'<li><a href="#{c.id}">{c.name}</a></li>' for c in constellations
     )
 
+    legend_html = "".join(
+        [
+            "<tr>",
+            *(
+                f'<td><div class="star" style="opacity: {magnitude_to_opacity(m)};"></div></td>'
+                for m in range(0, 7)
+            ),
+            "</tr><tr>",
+            *(f"<td>{i}</td>" for i in range(0, 7)),
+            "</tr>",
+        ]
+    )
+
     template = ""
     with open("template.html", "r") as templatefile:
         template = templatefile.read()
@@ -261,6 +274,7 @@ def main():
         .replace("{{NorthHemisphere}}", north_hemisphere_html)
         .replace("{{SouthHemisphere}}", south_hemisphere_html)
         .replace("{{Constellations}}", constellations_html)
+        .replace("{{Legend}}", legend_html)
     )
 
     with open("map.html", "w") as output:
