@@ -16,7 +16,7 @@
     "name": "Ursa Major",
     "declination": [-80, -41],
     "longitude": [-50, 16],
-    "description": "Containing several nearby stars, Ursa Major is distorted, but still recognizable. &xi; Ursae Majoris is pushed out of the constellation, and Pollux (seen in Gemini from Earth) makes an appearance."
+    "description": "Containing several nearby stars, Ursa Major is distorted, but still recognizable. &xi; Ursae Majoris is pushed out of the constellation."
   },
   {
     "id": "pisces",
@@ -106,6 +106,13 @@
     "declination": [-59, -32],
     "longitude": [108, 152],
     "description": "Several of Perseus' brightest stars are shifted out of the constellation entirely."
+  },
+  {
+    "id": "lynx",
+    "name": "Lynx",
+    "declination": [-75, -46],
+    "longitude": [19, 66],
+    "description": "Lynx is not a particularly distinct constellation, and its shape is not well-preserved regardless. Castor and Pollux are both shifted into here."
   },
   {
     "id": "orion",
