@@ -171,6 +171,12 @@
     "description": "Octans and Chamaeleon contain no bright stars, so this region of sky appears nearly empty &mdash; though &alpha; Trianguli Australis is on the border of this region. Erid has no easily visible north pole star."
   },
   {
+    "id": "libra",
+    "name": "Libra",
+    "declination": [-1, 29],
+    "longitude": [292, 308]
+  },
+  {
     "id": "canis-major",
     "name": "Canis Major",
     "declination": [3, 26],
