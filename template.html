@@ -1,17 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
   <head>
     <meta charset="UTF-8" />
     <title>Erid Star Charts</title>
     <style>
-      :root {
+      body {
         --deg: min(calc((100vw - 2em - 4px) / 85), calc((100vh - 1em - 4px) / 54));
         --star-color: white;
-      }
-
-      body {
+        --space-color: black;
         background-color: dimgray;
         margin: 0.5em;
+      }
+
+      body:has(#light-mode:checked) {
+        --star-color: black;
+        --space-color: white;
+        background-color: lightgray;
       }
 
       h2 {
@@ -43,8 +47,8 @@
       }
 
       .region {
-        border: 2px solid white;
-        background-color: black;
+        border: 2px solid var(--star-color);
+        background-color: var(--space-color);
         margin: 0.5em;
         display: block;
       }
@@ -56,12 +60,21 @@
         border-radius: 50%;
       }
 
-      summary::marker {
+      summary,
+      input[type=checkbox] {
         cursor: pointer;
       }
 
-      #legend {
-        margin-top: 1em;
+      label {
+        cursor: text;
+      }
+
+      details {
+        margin: 1em 0;
+      }
+
+      ol {
+        margin: 0;
       }
 
       #legend tbody {
@@ -77,13 +90,18 @@
 
       #legend td {
         width: 1em;
-        height: 1em;
         text-align: center;
+      }
+
+      #legend tr:first-child td {
+        height: 1em;
       }
     </style>
   </head>
   <body>
     <h1>Erid Star Charts</h1>
+    <input type="checkbox" id="light-mode" />
+    <label for="light-mode">Light mode</label>
     <details>
       <summary>Table of Contents</summary>
       <ol>
