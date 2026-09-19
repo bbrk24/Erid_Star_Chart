@@ -105,7 +105,7 @@
     "name": "Orion",
     "declination": [-27, 5],
     "longitude": [74, 100],
-    "description": "Orion consists mostly of distant stars, so its shape is completely intact (here shown upside-down, since Erid's north-south axis is roughly antiparallel Earth's). Only &chi;<sup>1</sup> Orionis and &pi;<sup>3</sup> Orionis are close enough to be shifted out of the constellation."
+    "description": "Orion consists mostly of distant stars, so its shape is completely intact. Only &chi;<sup>1</sup> Orionis and &pi;<sup>3</sup> Orionis are close enough to be shifted out of the constellation."
   },
   {
     "id": "sagittarius",
@@ -113,6 +113,20 @@
     "declination": [23, 52],
     "longitude": [235, 266],
     "description": "Both the &quot;teapot&quot; and Terebellum are unrecognizable. Two pairs of stars which are clearly distinct from Earth (&sigma; Sagittarii and &tau; Sagittarii; &zeta; Sagittarii and &phi; Sagittarii) form visual doubles."
+  },
+  {
+    "id": "auriga",
+    "name": "Auriga",
+    "declination": [-67, -36],
+    "longitude": [75, 105],
+    "description": "With Capella shifted out and &beta; Tauri shifted in, Auriga is not particularly recognizable."
+  },
+  {
+    "id": "aquila",
+    "name": "Aquila",
+    "declination": [-8, 17],
+    "longitude": [221, 251],
+    "description": "Although Altair is shifted out of Aquila entirely, &gamma; Aquilae takes its place, so that alone is not what makes the constellation unrecognizable. &tau; Ceti is present in this constellation as well."
   },
   {
     "id": "camelopardalis",

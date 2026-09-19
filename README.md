@@ -8,6 +8,8 @@ This repository contains a spreadsheet (EridStarChart.ods) which calculates the 
 
 The Python script assumes the relevant columns have the values as numbers, not formulas.
 
+#### Using the GUI
+
 1. Open EridStarChart.ods in LibreOffice Calc.
 2. In the menu at the top of the window, go to File > Save a Copy...
 3. In the window that pops up, change the File type to Text CSV (.csv), then click Save.
@@ -17,6 +19,13 @@ The Python script assumes the relevant columns have the values as numbers, not f
    - String delimiter: "
    - Uncheck "Save cell formulas instead of calculated values"
    - Uncheck "Fixed column width"
+5. Click "OK" to write the CSV.
+
+#### Using the CLI
+
+```sh
+soffice --headless --convert-to csv EridStarChart.ods
+```
 
 ### Generating the HTML from the CSV
 
