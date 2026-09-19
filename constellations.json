@@ -101,6 +101,13 @@
     "description": "The main shape of Taurus is difficult to recognize, though &beta; Tauri is replaced by &pi;<sup>3</sup> Orionis. Taurus contains two significant star clusters, the Hyades and the Pleiades."
   },
   {
+    "id": "perseus",
+    "name": "Perseus",
+    "declination": [-59, -32],
+    "longitude": [108, 152],
+    "description": "Several of Perseus' brightest stars are shifted out of the constellation entirely."
+  },
+  {
     "id": "orion",
     "name": "Orion",
     "declination": [-27, 5],
@@ -133,7 +140,7 @@
     "name": "Camelopardalis",
     "declination": [-88, -57],
     "longitude": [110, 152],
-    "description": "The faint constellation of Camelopardalis is Erid's southernmost constellation."
+    "description": "Camelopardalis is Erid's southernmost constellation. Its faint main asterism is completely overshadowed by the appearance of Capella."
   },
   {
     "id": "cepheus",
