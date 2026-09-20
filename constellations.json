@@ -192,6 +192,13 @@
     "description": "Though Monoceros contains few nearby stars, &epsilon; Monocerotis is close enough to flatten its head. Canis Minor is missing its main star, Procyon."
   },
   {
+    "id": "capricornus",
+    "name": "Capricornus",
+    "declination": [19, 38],
+    "longitude": [207, 238],
+    "description": "Fomalhaut is shifted into here and outshines all the stars that form Capricornus."
+  },
+  {
     "id": "phoenix",
     "name": "Phoenix",
     "declination": [50, 67],
@@ -209,6 +216,12 @@
     "name": "Sculptor",
     "declination": [35, 49],
     "longitude": [150, 184]
+  },
+  {
+    "id": "aries",
+    "name": "Aries",
+    "declination": [-31, -15],
+    "longitude": [126, 150]
   },
   {
     "id": "canis-major",
