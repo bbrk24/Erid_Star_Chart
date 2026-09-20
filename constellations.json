@@ -199,6 +199,12 @@
     "description": "The main asterism of Libra is completely intact."
   },
   {
+    "id": "sculptor",
+    "name": "Sculptor",
+    "declination": [35, 49],
+    "longitude": [150, 184]
+  },
+  {
     "id": "canis-major",
     "name": "Canis Major",
     "declination": [3, 26],
