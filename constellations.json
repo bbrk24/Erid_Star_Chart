@@ -19,6 +19,13 @@
     "description": "Containing several nearby stars, Ursa Major is distorted, but still recognizable. &xi; Ursae Majoris is pushed out of the constellation."
   },
   {
+    "id": "octans-chamaeleon-tucana",
+    "name": "Octans, Chamaeleon, and Tucana",
+    "declination": [68, 90],
+    "longitude": [0, 360],
+    "description": "Octans and Chamaeleon contain no bright stars, so this region of sky appears nearly empty &mdash; though Achernar is shifted into Tucana. Erid has no easily visible pole star."
+  },
+  {
     "id": "pisces",
     "name": "Pisces",
     "declination": [-27, 15],
@@ -185,11 +192,10 @@
     "description": "Though Monoceros contains few nearby stars, &epsilon; Monocerotis is close enough to flatten its head. Canis Minor is missing its main star, Procyon."
   },
   {
-    "id": "octans-chamaeleon",
-    "name": "Octans and Chamaeleon",
-    "declination": [68, 90],
-    "longitude": [0, 360],
-    "description": "Octans and Chamaeleon contain no bright stars, so this region of sky appears nearly empty &mdash; though &alpha; Trianguli Australis is on the border of this region. Erid has no easily visible north pole star."
+    "id": "phoenix",
+    "name": "Phoenix",
+    "declination": [50, 67],
+    "longitude": [132, 176]
   },
   {
     "id": "libra",

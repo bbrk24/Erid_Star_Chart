@@ -102,12 +102,12 @@ class ConstellationInfo:
 
     def element_style(self):
         if self.declination[1] == 90:
-            size = 90 - self.declination[0]
+            size = 2 * (90 - self.declination[0])
             return (
                 f"width: calc(var(--deg) * {size}); height: calc(var(--deg) * {size});"
             )
         if self.declination[0] == -90:
-            size = 90 + self.declination[1]
+            size = 2 * (90 + self.declination[1])
             return (
                 f"width: calc(var(--deg) * {size}); height: calc(var(--deg) * {size});"
             )
