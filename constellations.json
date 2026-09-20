@@ -164,6 +164,13 @@
     "description": "Though half of the famous &quot;W&quot; of Cassiopeia is intact, &epsilon; Cassiopeiae is in a significantly different spot, and &beta; Cassiopeiae is shifted out of the constellation entirely."
   },
   {
+    "id": "gemini",
+    "name": "Gemini",
+    "declination": [-48, -27],
+    "longitude": [49, 81],
+    "description": "Most of the bright stars in Gemini are nearby, so the constellation is unrecognizable."
+  },
+  {
     "id": "octans-chamaeleon",
     "name": "Octans and Chamaeleon",
     "declination": [68, 90],
@@ -174,7 +181,8 @@
     "id": "libra",
     "name": "Libra",
     "declination": [-1, 29],
-    "longitude": [292, 308]
+    "longitude": [292, 308],
+    "description": "The main asterism of Libra is completely intact."
   },
   {
     "id": "canis-major",
@@ -182,6 +190,12 @@
     "declination": [3, 26],
     "longitude": [56, 72],
     "description": "Though most of the individual stars of Canis Major are distant, its brightest star, Sirius, is rather close to Sol. You could still draw a dog with the visible stars, in a different orientation from Earth&apos;s."
+  },
+  {
+    "id": "cancer",
+    "name": "Cancer",
+    "declination": [-41, -19],
+    "longitude": [30, 45]
   },
   {
     "id": "circinus",
