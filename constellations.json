@@ -178,6 +178,13 @@
     "description": "Most of the bright stars in Gemini are nearby, so the constellation is unrecognizable."
   },
   {
+    "id": "monoceros-canis-minor",
+    "name": "Monoceros and Canis Minor",
+    "declination": [-22, 1],
+    "longitude": [46, 74],
+    "description": "Though Monoceros contains few nearby stars, &epsilon; Monocerotis is close enough to flatten its head. Canis Minor is missing its main star, Procyon."
+  },
+  {
     "id": "octans-chamaeleon",
     "name": "Octans and Chamaeleon",
     "declination": [68, 90],
