@@ -85,7 +85,7 @@
     "name": "Bo&ouml;tes and Canes Venatici",
     "declination": [-51, -9],
     "longitude": [290, 318],
-    "description": "Bo&ouml;tes is nearly on the opposite side of Sol from Erid, so even the nearby stars stay in the constellation &mdash; though its shape is distorted. &alpha; Canum Venaticorum is a naked-eye double."
+    "description": "Bo&ouml;tes is nearly on the opposite side of Sol from Erid, so even the nearby stars stay in the constellation &mdash; though its shape is distorted."
   },
   {
     "id": "aquarius",
@@ -99,6 +99,13 @@
     "declination": [-37, -8],
     "longitude": [84, 123],
     "description": "The main shape of Taurus is difficult to recognize, though &beta; Tauri is replaced by &pi;<sup>3</sup> Orionis. Taurus contains two significant star clusters, the Hyades and the Pleiades."
+  },
+  {
+    "id": "scorpius",
+    "name": "Scorpius",
+    "declination": [9, 49],
+    "longitude": [271, 297],
+    "description": "Although some stars are nearby and shifted significantly, particularly &epsilon; Scorpii and &zeta;<sup>2</sup> Scorpii, the general shape of Scorpius is still very recognizable."
   },
   {
     "id": "perseus",
@@ -189,7 +196,7 @@
     "name": "Canis Major",
     "declination": [3, 26],
     "longitude": [56, 72],
-    "description": "Though most of the individual stars of Canis Major are distant, its brightest star, Sirius, is rather close to Sol. You could still draw a dog with the visible stars, in a different orientation from Earth&apos;s."
+    "description": "Though most of the individual stars of Canis Major are distant, its brightest star, Sirius, is rather close to Sol.."
   },
   {
     "id": "cancer",
