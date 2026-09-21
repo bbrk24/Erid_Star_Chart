@@ -237,6 +237,13 @@
     "longitude": [30, 45]
   },
   {
+    "id": "coma-berenices",
+    "name": "Coma Berenices",
+    "declination": [-41, -22],
+    "longitude": [326, 338],
+    "description": "Coma Berenices is a small constellation; two of its three main stars have been shifted out of it."
+  },
+  {
     "id": "circinus",
     "name": "Circinus",
     "declination": [48, 61],
