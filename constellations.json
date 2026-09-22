@@ -19,13 +19,6 @@
     "description": "Containing several nearby stars, Ursa Major is distorted, but still recognizable. &xi; Ursae Majoris is pushed out of the constellation."
   },
   {
-    "id": "octans-chamaeleon-tucana",
-    "name": "Octans, Chamaeleon, and Tucana",
-    "declination": [68, 90],
-    "longitude": [0, 360],
-    "description": "Octans and Chamaeleon contain no bright stars, so this region of sky appears nearly empty &mdash; though Achernar is shifted into Tucana. Erid has no easily visible pole star."
-  },
-  {
     "id": "pisces",
     "name": "Pisces",
     "declination": [-27, 15],
@@ -113,6 +106,13 @@
     "declination": [9, 49],
     "longitude": [271, 297],
     "description": "Although some stars are nearby and shifted significantly, particularly &epsilon; Scorpii and &zeta;<sup>2</sup> Scorpii, the general shape of Scorpius is still very recognizable."
+  },
+  {
+    "id": "octans",
+    "name": "Octans",
+    "declination": [74, 90],
+    "longitude": [0, 360],
+    "description": "Octans contains no bright stars; Erid has no easily visible pole star."
   },
   {
     "id": "perseus",
@@ -218,6 +218,13 @@
     "longitude": [150, 184]
   },
   {
+    "id": "tucana",
+    "name": "Tucana",
+    "declination": [67, 81],
+    "longitude": [134, 203],
+    "description": "Achernar is shifted into this constellation and outshines all its other stars."
+  },
+  {
     "id": "aries",
     "name": "Aries",
     "declination": [-31, -15],
@@ -228,7 +235,14 @@
     "name": "Canis Major",
     "declination": [3, 26],
     "longitude": [56, 72],
-    "description": "Though most of the individual stars of Canis Major are distant, its brightest star, Sirius, is rather close to Sol.."
+    "description": "Though most of the individual stars of Canis Major are distant, its brightest star, Sirius, is rather close to Sol."
+  },
+  {
+    "id": "grus",
+    "name": "Grus",
+    "declination": [46, 65],
+    "longitude": [186, 211],
+    "description": "&alpha; Gruis, &epsilon; Gruis, and &zeta; Gruis are all somewhat nearby stars. Not enough to shift any of them out of the constellation entirely, but enough to distort the constellation."
   },
   {
     "id": "cancer",
@@ -237,11 +251,23 @@
     "longitude": [30, 45]
   },
   {
+    "id": "pavo",
+    "name": "Pavo",
+    "declination": [62, 75],
+    "longitude": [239, 284]
+  },
+  {
     "id": "coma-berenices",
     "name": "Coma Berenices",
     "declination": [-41, -22],
     "longitude": [326, 338],
     "description": "Coma Berenices is a small constellation; two of its three main stars have been shifted out of it."
+  },
+  {
+    "id": "apus",
+    "name": "Apus",
+    "declination": [67, 77],
+    "longitude": [293, 336]
   },
   {
     "id": "circinus",
@@ -254,6 +280,12 @@
     "name": "Equuleus",
     "declination": [-2, 5],
     "longitude": [215, 226]
+  },
+  {
+    "id": "chamaeleon",
+    "name": "Chamaeleon",
+    "declination": [66, 72],
+    "longitude": [-5, 22]
   },
   {
     "id": "sagitta",
