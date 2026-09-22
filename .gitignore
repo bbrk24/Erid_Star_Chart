@@ -1,3 +1,4 @@
 *.csv
 .~lock.*
 map.html
+dist/

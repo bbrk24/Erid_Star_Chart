@@ -1,0 +1,35 @@
+name: Push to Pages
+'on':
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: jmservera/libreoffice-action@d1c401e364597cbe9a7c349fdabbec97d5a571ed
+        with:
+          command: libreoffice --headless --convert-to csv EridStarChart.ods
+      - shell: bash
+        run: |
+          python3 ./generate_html.py
+          mkdir dist
+          mv map.html dist/index.html
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: dist/
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5
+        with:
+          error_count: 1
