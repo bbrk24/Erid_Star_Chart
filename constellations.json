@@ -199,6 +199,13 @@
     "description": "Fomalhaut is shifted into here and outshines all the stars that form Capricornus."
   },
   {
+    "id": "lupus",
+    "name": "Lupus",
+    "declination": [26, 47],
+    "longitude": [296, 322],
+    "description": "The main shape of Lupus is recognizable, though the appearance of stars such as &eta; Centauri distracts from it somewhat."
+  },
+  {
     "id": "phoenix",
     "name": "Phoenix",
     "declination": [50, 67],
