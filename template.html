@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
       body {
-        --deg: min(calc((100vw - 2em - 4px) / 85), calc((100vh - 1em - 4px) / 54));
+        --deg: max(13px, min(calc((100vw - 2em - 4px) / 85), calc((100vh - 1em - 4px) / 54)));
         --star-color: white;
         --space-color: black;
         background-color: dimgray;
         margin: 0.5em;
+        width: calc(100vw - 1em);
       }
 
       body:has(#light-mode:checked) {
@@ -50,8 +51,15 @@
       .region {
         border: 2px solid var(--star-color);
         background-color: var(--space-color);
-        margin: 0.5em;
         display: block;
+      }
+
+      .scroll-container {
+        width: 100%;
+        padding: 0 0.5em;
+        margin: 0.5em 0;
+        box-sizing: border-box;
+        overflow-x: scroll;
       }
 
       .hemisphere {
@@ -59,6 +67,7 @@
         width: var(--diameter);
         height: var(--diameter);
         border-radius: 50%;
+        margin: 0.5em;
       }
 
       summary,
@@ -112,7 +121,7 @@
     </details>
     <table id="legend">
       <caption>Star magnitude key</caption>
-      <tbody class="region" >
+      <tbody class="region">
         {{Legend}}
       </tbody>
     </table>

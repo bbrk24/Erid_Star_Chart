@@ -244,7 +244,7 @@ def main():
                     ] += f'<div class="star" title="{star.name}" style="left: {html_left}%; top: {html_top}%; opacity: {opacity};"></div>'
 
     constellations_html = "".join(
-        f'<section id="{c.id}"><h2>{c.name}</h2><div class="region" style="{c.element_style()}">{constellations_inner_htmls[c.id]}</div>{c.description_html()}</section>'
+        f'<section id="{c.id}"><h2>{c.name}</h2><div class="scroll-container"><div class="region" style="{c.element_style()}">{constellations_inner_htmls[c.id]}</div></div>{c.description_html()}</section>'
         for c in constellations
     )
 
