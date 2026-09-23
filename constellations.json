@@ -258,10 +258,23 @@
     "longitude": [30, 45]
   },
   {
+    "id": "indus",
+    "name": "Indus",
+    "declination": [51, 70],
+    "longitude": [215, 239]
+  },
+  {
     "id": "pavo",
     "name": "Pavo",
     "declination": [62, 75],
     "longitude": [239, 284]
+  },
+  {
+    "id": "lepus",
+    "name": "Lepus",
+    "declination": [6, 20],
+    "longitude": [73, 92],
+    "description": "Lepus is broadly recognizable, but &epsilon; Leporis is shifted significantly and &eta; Leporis is nowhere to be seen."
   },
   {
     "id": "coma-berenices",
