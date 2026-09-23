@@ -252,6 +252,12 @@
     "description": "&alpha; Gruis, &epsilon; Gruis, and &zeta; Gruis are all somewhat nearby stars. Not enough to shift any of them out of the constellation entirely, but enough to distort the constellation."
   },
   {
+    "id": "telescopium",
+    "name": "Telescopium",
+    "declination": [49, 64],
+    "longitude": [239, 271]
+  },
+  {
     "id": "cancer",
     "name": "Cancer",
     "declination": [-41, -19],
@@ -284,10 +290,22 @@
     "description": "Coma Berenices is a small constellation; two of its three main stars have been shifted out of it."
   },
   {
+    "id": "vulpecula",
+    "name": "Vulpecula",
+    "declination": [-19, -10],
+    "longitude": [219, 242]
+  },
+  {
     "id": "apus",
     "name": "Apus",
     "declination": [67, 77],
     "longitude": [293, 336]
+  },
+  {
+    "id": "columba",
+    "name": "Columba",
+    "declination": [26, 38],
+    "longitude": [66, 77]
   },
   {
     "id": "circinus",
