@@ -219,6 +219,12 @@
     "description": "The main asterism of Libra is completely intact."
   },
   {
+    "id": "horologium",
+    "name": "Horologium",
+    "declination": [42, 67],
+    "longitude": [95, 117]
+  },
+  {
     "id": "sculptor",
     "name": "Sculptor",
     "declination": [35, 49],
@@ -283,6 +289,12 @@
     "description": "Lepus is broadly recognizable, but &epsilon; Leporis is shifted significantly and &eta; Leporis is nowhere to be seen."
   },
   {
+    "id": "pictor",
+    "name": "Pictor",
+    "declination": [47, 60],
+    "longitude": [45, 69]
+  },
+  {
     "id": "coma-berenices",
     "name": "Coma Berenices",
     "declination": [-41, -22],
@@ -300,6 +312,12 @@
     "name": "Apus",
     "declination": [67, 77],
     "longitude": [293, 336]
+  },
+  {
+    "id": "piscis-austrinus",
+    "name": "Piscis Austrinus",
+    "declination": [36, 45],
+    "longitude": [189, 210]
   },
   {
     "id": "columba",
