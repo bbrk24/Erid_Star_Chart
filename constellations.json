@@ -270,6 +270,13 @@
     "longitude": [30, 45]
   },
   {
+    "id": "lyra",
+    "name": "Lyra",
+    "declination": [-37, -17],
+    "longitude": [238, 254],
+    "description": "Lyra no longer has Vega, which renders it unremarkable."
+  },
+  {
     "id": "indus",
     "name": "Indus",
     "declination": [51, 70],
@@ -287,6 +294,12 @@
     "declination": [6, 20],
     "longitude": [73, 92],
     "description": "Lepus is broadly recognizable, but &epsilon; Leporis is shifted significantly and &eta; Leporis is nowhere to be seen."
+  },
+  {
+    "id": "lacerta",
+    "name": "Lacerta",
+    "declination": [-44, -27],
+    "longitude": [190, 207]
   },
   {
     "id": "pictor",
