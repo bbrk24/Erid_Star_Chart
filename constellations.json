@@ -12,11 +12,11 @@
     "longitude": [90, 132]
   },
   {
-    "id": "ursa-major",
-    "name": "Ursa Major",
+    "id": "ursa-major-leo-minor",
+    "name": "Ursa Major and Leo Minor",
     "declination": [-80, -41],
     "longitude": [-50, 16],
-    "description": "Containing several nearby stars, Ursa Major is distorted, but still recognizable. &xi; Ursae Majoris is pushed out of the constellation."
+    "description": "Containing several nearby stars, Ursa Major is distorted, but still recognizable. &xi; Ursae Majoris is pushed out of the constellation. Pollux (seen in Gemini from Earth) is shifted into the otherwise unremarkable constellation of Leo Minor."
   },
   {
     "id": "pisces",
@@ -126,7 +126,7 @@
     "name": "Lynx",
     "declination": [-75, -46],
     "longitude": [19, 66],
-    "description": "Lynx is not a particularly distinct constellation, and its shape is not well-preserved regardless. Castor and Pollux are both shifted into here."
+    "description": "Lynx is not a particularly distinct constellation, and its shape is not well-preserved regardless. Castor is shifted into here from Gemini."
   },
   {
     "id": "orion",
@@ -325,6 +325,12 @@
     "name": "Piscis Austrinus",
     "declination": [36, 45],
     "longitude": [189, 210]
+  },
+  {
+    "id": "microscopium",
+    "name": "Microscopium",
+    "declination": [39, 52],
+    "longitude": [217, 231]
   },
   {
     "id": "columba",
