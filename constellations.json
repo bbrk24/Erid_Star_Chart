@@ -1,7 +1,7 @@
 [
   {
-    "id": "hydra-crater-corvus-sextans",
-    "name": "Hydra, Crater, Corvus, and Sextans",
+    "id": "hydra-crater-corvus-sextans-antlia",
+    "name": "Hydra, Crater, Corvus, Sextans, and Antlia",
     "declination": [-19, 29],
     "longitude": [-47, 38]
   },
@@ -308,6 +308,13 @@
     "longitude": [219, 242]
   },
   {
+    "id": "ara",
+    "name": "Ara",
+    "declination": [50, 62],
+    "longitude": [270, 294],
+    "description": "&beta; Hydri is shifted into this constellation, and &alpha; Arae appears displaced somewhat, but overall this constellation is relatively unaffected."
+  },
+  {
     "id": "apus",
     "name": "Apus",
     "declination": [67, 77],
@@ -324,6 +331,13 @@
     "name": "Columba",
     "declination": [26, 38],
     "longitude": [66, 77]
+  },
+  {
+    "id": "hydrus",
+    "name": "Hydrus",
+    "declination": [69, 77],
+    "longitude": [77, 117],
+    "description": "The two brightest stars in Hydrus are shifted out, leaving a small and faint constellation."
   },
   {
     "id": "circinus",
