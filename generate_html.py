@@ -6,7 +6,6 @@ from dataclasses import dataclass
 from math import acos, atan2, cos, pi, sin, tan
 from typing import Any
 
-
 MAX_VISIBLE_MAGNITUDE = 6.5
 
 

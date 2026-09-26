@@ -64,7 +64,10 @@
       }
 
       .hemisphere {
-        --diameter: min(calc(min(100vh, calc(100vw - 1em)) - 1em - 4px), calc(max(50vw, 50vh) - 1.5em - 4px));
+        --diameter: min(
+          calc(min(100vh, calc(100vw - 1em)) - 1em - 4px),
+          calc(max(50vw, 50vh) - 1.5em - 4px)
+        );
         width: var(--diameter);
         height: var(--diameter);
         border-radius: 50%;
