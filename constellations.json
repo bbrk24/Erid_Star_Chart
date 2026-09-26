@@ -150,8 +150,8 @@
     "description": "With Capella shifted out and &beta; Tauri shifted in, Auriga is not particularly recognizable."
   },
   {
-    "id": "aquila",
-    "name": "Aquila",
+    "id": "aquila-delphinus",
+    "name": "Aquila and Delphinus",
     "declination": [-8, 17],
     "longitude": [221, 251],
     "description": "Although Altair is shifted out of Aquila entirely, &gamma; Aquilae takes its place, so that alone is not what makes the constellation unrecognizable. &tau; Ceti is present in this constellation as well."
@@ -328,10 +328,22 @@
     "description": "&beta; Hydri is shifted into this constellation, and &alpha; Arae appears displaced somewhat, but overall this constellation is relatively unaffected."
   },
   {
+    "id": "corona-borealis",
+    "name": "Corona Borealis",
+    "declination": [-36, -21],
+    "longitude": [279, 292]
+  },
+  {
     "id": "apus",
     "name": "Apus",
     "declination": [67, 77],
     "longitude": [293, 336]
+  },
+  {
+    "id": "dorado",
+    "name": "Dorado",
+    "declination": [55, 65],
+    "longitude": [60, 88]
   },
   {
     "id": "piscis-austrinus",
@@ -344,6 +356,12 @@
     "name": "Microscopium",
     "declination": [39, 52],
     "longitude": [217, 231]
+  },
+  {
+    "id": "norma",
+    "name": "Norma",
+    "declination": [39, 55],
+    "longitude": [291, 302]
   },
   {
     "id": "columba",

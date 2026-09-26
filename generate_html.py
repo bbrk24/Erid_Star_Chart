@@ -16,6 +16,13 @@ class StarData:
     magnitude: float
 
 
+def cast_or_error(obj: Any, t: type, msg: str):
+    if isinstance(obj, t):
+        return obj
+    else:
+        raise TypeError(msg)
+
+
 @dataclass
 class ConstellationInfo:
     id: str
@@ -27,51 +34,47 @@ class ConstellationInfo:
     @classmethod
     def from_dict(cls, d: Any):
         if not isinstance(d, dict):
-            raise TypeError()
+            raise TypeError("constellation must be an object")
 
-        id = d["id"]
-        name = d["name"]
-        declination = d["declination"]
-        longitude = d["longitude"]
+        id: str = cast_or_error(d["id"], str, "'id must be a string")
+        name: str = cast_or_error(d["name"], str, f"'name' must be a string")
+        declination: list = cast_or_error(
+            d["declination"], list, "'declination' must be an array"
+        )
+        longitude: list = cast_or_error(
+            d["longitude"], list, "'longitude' must be an array"
+        )
 
-        if (
-            not isinstance(id, str)
-            or not isinstance(name, str)
-            or not isinstance(declination, list)
-            or not isinstance(longitude, list)
-        ):
-            raise TypeError()
-
-        description = None
+        description: str | None = None
         if "description" in d:
             description = d["description"]
-            if not isinstance(description, str):
-                raise TypeError()
+        if description is not None and not isinstance(description, str):
+            raise TypeError("'description' must be null or string")
 
         if (
             len(longitude) != 2
+            or not isinstance(longitude[0], int)
+            or not isinstance(longitude[1], int)
             or longitude[0] <= -360
             or longitude[1] > 360
             or longitude[0] >= longitude[1]
             or longitude[1] - longitude[0] > 360
         ):
-            raise ValueError("Invalid longitude")
+            raise ValueError(
+                "Invalid longitude (must be a pair of integers within 360 of each other)"
+            )
 
         if (
             len(declination) != 2
+            or not isinstance(declination[0], int)
+            or not isinstance(declination[1], int)
             or declination[0] < -90
             or declination[1] > 90
             or declination[0] >= declination[1]
         ):
-            raise ValueError("Invalid declination")
-
-        if (
-            not isinstance(longitude[0], int)
-            or not isinstance(longitude[1], int)
-            or not isinstance(declination[0], int)
-            or not isinstance(declination[1], int)
-        ):
-            raise TypeError()
+            raise ValueError(
+                "Invalid declination (must be a pair of integers between -90 and 90)"
+            )
 
         return cls(id, name, tuple(declination), tuple(longitude), description)
 
@@ -113,7 +116,7 @@ class ConstellationInfo:
             )
 
         declination_range = self.declination[1] - self.declination[0]
-        longitude_range = self.longitude[1] - self.longitude[0]
+        longitude_range = float(self.longitude[1] - self.longitude[0])
 
         if self.declination[1] >= 0 and self.declination[0] <= 0:
             min_declination = 0
@@ -150,9 +153,14 @@ class ConstellationInfo:
 
 
 def magnitude_to_opacity(magnitude: float) -> float:
-    if magnitude <= 0.5:
+    OPAQUE_MAGNITUDE = 0.5
+    MAX_VISIBLE_MAGNITUDE = 6.5
+    MAGNITUDE_RANGE = MAX_VISIBLE_MAGNITUDE - OPAQUE_MAGNITUDE
+    MIN_VISIBLE_OPACITY = 0x10 / 0xFF
+
+    if magnitude <= OPAQUE_MAGNITUDE:
         return 1.0
-    return (0x10 / 0xFF) ** ((magnitude - 0.5) / 6.0)
+    return MIN_VISIBLE_OPACITY ** ((magnitude - OPAQUE_MAGNITUDE) / MAGNITUDE_RANGE)
 
 
 def get_coordinates(latitude: float, longitude: float):
@@ -164,8 +172,6 @@ def get_coordinates(latitude: float, longitude: float):
 
 
 def get_stars():
-    stars: list[StarData] = []
-
     with open("EridStarChart.csv", "r") as csvfile:
         reader = csv.reader(csvfile)
 
@@ -180,19 +186,17 @@ def get_stars():
                 continue
 
             try:
-                stars.append(
-                    StarData(
-                        name,
-                        longitude=float(row[21]),
-                        declination=float(row[22]),
-                        distance=float(row[23]),
-                        magnitude=float(row[24]),
-                    )
+                star = StarData(
+                    name,
+                    longitude=float(row[21]),
+                    declination=float(row[22]),
+                    distance=float(row[23]),
+                    magnitude=float(row[24]),
                 )
             except ValueError:
                 continue
 
-    return stars
+            yield star
 
 
 def main():
