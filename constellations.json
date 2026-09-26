@@ -129,6 +129,12 @@
     "description": "Lynx is not a particularly distinct constellation, and its shape is not well-preserved regardless. Castor is shifted into here from Gemini."
   },
   {
+    "id": "carina-volans",
+    "name": "Carina and Volans",
+    "declination": [43, 66],
+    "longitude": [10, 63]
+  },
+  {
     "id": "orion",
     "name": "Orion",
     "declination": [-27, 5],
@@ -344,12 +350,6 @@
     "name": "Apus",
     "declination": [67, 77],
     "longitude": [293, 336]
-  },
-  {
-    "id": "volans",
-    "name": "Volans",
-    "declination": [57, 66],
-    "longitude": [17, 50]
   },
   {
     "id": "dorado",
