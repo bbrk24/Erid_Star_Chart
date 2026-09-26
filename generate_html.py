@@ -7,6 +7,9 @@ from math import acos, atan2, cos, pi, sin, tan
 from typing import Any
 
 
+MAX_VISIBLE_MAGNITUDE = 6.5
+
+
 @dataclass
 class StarData:
     name: str
@@ -154,7 +157,6 @@ class ConstellationInfo:
 
 def magnitude_to_opacity(magnitude: float) -> float:
     OPAQUE_MAGNITUDE = 0.5
-    MAX_VISIBLE_MAGNITUDE = 6.5
     MAGNITUDE_RANGE = MAX_VISIBLE_MAGNITUDE - OPAQUE_MAGNITUDE
     MIN_VISIBLE_OPACITY = 0x10 / 0xFF
 
@@ -222,6 +224,7 @@ def main():
             star_html = f'<div class="star" title="{star.name}" style="left: {(x + 1.0) * 50.0}%; top: {(y + 1.0) * 50.0}%; opacity: {opacity};"></div>'
             south_hemisphere_html += star_html
 
+        is_in_constellation = False
         for constellation in constellations:
             # center RA on +90, so that changing declination is an X-axis rotation
             phi = pi * (star.longitude - constellation.longitude_offset()) / 180.0
@@ -240,12 +243,16 @@ def main():
                     90.0 - 180.0 * theta_prime / pi, 180.0 * phi_prime / pi
                 )
                 if constellation.contains_point(x, y):
+                    is_in_constellation = True
                     limit_x, limit_y = constellation.limit_coordinates()
                     html_left = (x / limit_x + 1.0) * 50.0
                     html_top = (y / limit_y + 1.0) * 50.0
                     constellations_inner_htmls[
                         constellation.id
                     ] += f'<div class="star" title="{star.name}" style="left: {html_left}%; top: {html_top}%; opacity: {opacity};"></div>'
+
+        if not is_in_constellation and star.magnitude <= MAX_VISIBLE_MAGNITUDE:
+            print(star.name, "is not in any constellations")
 
     constellations_html = "".join(
         f'<section id="{c.id}"><h2>{c.name}</h2><div class="scroll-container"><div class="region" style="{c.element_style()}">{constellations_inner_htmls[c.id]}</div></div>{c.description_html()}</section>'

@@ -340,6 +340,12 @@
     "longitude": [293, 336]
   },
   {
+    "id": "volans",
+    "name": "Volans",
+    "declination": [57, 66],
+    "longitude": [17, 50]
+  },
+  {
     "id": "dorado",
     "name": "Dorado",
     "declination": [55, 65],
@@ -364,10 +370,23 @@
     "longitude": [291, 302]
   },
   {
+    "id": "mensa",
+    "name": "Mensa",
+    "declination": [66, 76],
+    "longitude": [41, 73],
+    "description": "From Earth, Mensa is by far the faintest constellation: its brightest star, &alpha; Mensae, has magnitude 5.09. From Erid, &alpha; Mensae is not in Mensa; the brightest star is instead the much brighter &zeta; Doradus (combined magnitude 4.20)."
+  },
+  {
     "id": "columba",
     "name": "Columba",
     "declination": [26, 38],
     "longitude": [66, 77]
+  },
+  {
+    "id": "musca",
+    "name": "Musca",
+    "declination": [54, 64],
+    "longitude": [-17, 3]
   },
   {
     "id": "hydrus",
@@ -393,6 +412,13 @@
     "name": "Chamaeleon",
     "declination": [66, 72],
     "longitude": [-5, 22]
+  },
+  {
+    "id": "triangulum",
+    "name": "Triangulum",
+    "declination": [-36, -27],
+    "longitude": [143, 151],
+    "description": "&alpha; Trianguli is a nearby star shifted out of the constellation."
   },
   {
     "id": "sagitta",
