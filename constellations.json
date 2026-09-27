@@ -115,6 +115,12 @@
     "description": "Octans contains no bright stars; Erid has no easily visible pole star."
   },
   {
+    "id": "puppis",
+    "name": "Puppis",
+    "declination": [2, 46],
+    "longitude": [40, 63]
+  },
+  {
     "id": "perseus",
     "name": "Perseus",
     "declination": [-59, -32],
