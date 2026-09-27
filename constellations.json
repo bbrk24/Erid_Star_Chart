@@ -6,6 +6,13 @@
     "longitude": [-47, 38]
   },
   {
+    "id": "ophiuchus-serpens-scutum",
+    "name": "Ophiuchus, Serpens, and Scutum",
+    "declination": [-21, 30],
+    "longitude": [249, 295],
+    "description": "Serpens is the only disjoint constellation; its two sections (Serpens Caput and Serpens Cauda) are separated by Ophiuchus. Together they contain several nearby stars, including &alpha; Centauri."
+  },
+  {
     "id": "eridanus-fornax-caelum",
     "name": "Eridanus, Fornax, and Caelum",
     "declination": [-3, 51],
@@ -86,12 +93,6 @@
     "declination": [-51, -9],
     "longitude": [290, 318],
     "description": "Bo&ouml;tes is nearly on the opposite side of Sol from Erid, so even the nearby stars stay in the constellation &mdash; though its shape is distorted."
-  },
-  {
-    "id": "ophiuchus",
-    "name": "Ophiuchus",
-    "declination": [-5, 30],
-    "longitude": [256, 289]
   },
   {
     "id": "aquarius",
@@ -425,12 +426,6 @@
     "declination": [69, 77],
     "longitude": [77, 117],
     "description": "The two brightest stars in Hydrus are shifted out, leaving a small and faint constellation."
-  },
-  {
-    "id": "scutum",
-    "name": "Scutum",
-    "declination": [11, 22],
-    "longitude": [249, 259]
   },
   {
     "id": "circinus",
