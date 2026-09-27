@@ -88,6 +88,12 @@
     "description": "Bo&ouml;tes is nearly on the opposite side of Sol from Erid, so even the nearby stars stay in the constellation &mdash; though its shape is distorted."
   },
   {
+    "id": "ophiuchus",
+    "name": "Ophiuchus",
+    "declination": [-5, 30],
+    "longitude": [256, 289]
+  },
+  {
     "id": "aquarius",
     "name": "Aquarius",
     "declination": [8, 32],
