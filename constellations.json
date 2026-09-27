@@ -101,6 +101,13 @@
     "description": "The main shape of Taurus is difficult to recognize, though &beta; Tauri is replaced by &pi;<sup>3</sup> Orionis. Taurus contains two significant star clusters, the Hyades and the Pleiades."
   },
   {
+    "id": "cygnus",
+    "name": "Cygnus",
+    "declination": [-50, -18],
+    "longitude": [208, 243],
+    "description": "The location of Deneb is approximate, as its actual position is uncertain. Although the shape of Cygnus appears to be only moderately distorted, several of the stars have moved significantly, particularly &epsilon; Cygni."
+  },
+  {
     "id": "scorpius",
     "name": "Scorpius",
     "declination": [9, 49],
