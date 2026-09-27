@@ -1,9 +1,15 @@
 [
   {
-    "id": "hydra-crater-corvus-sextans-antlia",
-    "name": "Hydra, Crater, Corvus, Sextans, and Antlia",
-    "declination": [-19, 29],
-    "longitude": [-47, 38]
+    "id": "hydra-crater-corvus-sextans-antlia-pyxis",
+    "name": "Hydra, Crater, Corvus, Sextans, Antlia, and Pyxis",
+    "declination": [-20, 29],
+    "longitude": [-47, 40]
+  },
+  {
+    "id": "eridanus-fornax-caelum",
+    "name": "Eridanus, Fornax, and Caelum",
+    "declination": [-3, 53],
+    "longitude": [89, 132]
   },
   {
     "id": "ophiuchus-serpens-scutum",
@@ -13,15 +19,9 @@
     "description": "Serpens is the only disjoint constellation; its two sections (Serpens Caput and Serpens Cauda) are separated by Ophiuchus. Together they contain several nearby stars, including &alpha; Centauri."
   },
   {
-    "id": "eridanus-fornax-caelum",
-    "name": "Eridanus, Fornax, and Caelum",
-    "declination": [-3, 51],
-    "longitude": [89, 132]
-  },
-  {
     "id": "ursa-major-leo-minor",
     "name": "Ursa Major and Leo Minor",
-    "declination": [-80, -41],
+    "declination": [-82, -41],
     "longitude": [-50, 16],
     "description": "Containing several nearby stars, Ursa Major is distorted, but still recognizable. &xi; Ursae Majoris is pushed out of the constellation. Pollux (seen in Gemini from Earth) is shifted into the otherwise unremarkable constellation of Leo Minor."
   },
@@ -36,8 +36,15 @@
     "id": "cetus",
     "name": "Cetus",
     "declination": [-9, 29],
-    "longitude": [125, 169],
+    "longitude": [121, 169],
     "description": "The shape of Cetus is largely intact, with a couple nearby stars (including &mu; Ceti and &tau; Ceti) shifted out of the constellation."
+  },
+  {
+    "id": "hercules",
+    "name": "Hercules",
+    "declination": [-45, -5],
+    "longitude": [245, 287],
+    "description": "&zeta; Herculis is close enough that its apparent drift throws off most interpretations of this constellation. Nearby stars shifted into here include Vega and Sol."
   },
   {
     "id": "pegasus",
@@ -47,24 +54,31 @@
     "description": "Alpheratz (technically in Andromeda, at least by Earth's definition) is shifted quite severely, as to make the famous &quot;square of Pegasus&quot; no longer resemble a square. &theta; Pegasi is similarly nearby, but overall the constellation is not distorted too badly."
   },
   {
-    "id": "hercules",
-    "name": "Hercules",
-    "declination": [-45, -5],
-    "longitude": [253, 287],
-    "description": "&zeta; Herculis is close enough that its apparent drift throws off most interpretations of this constellation. Nearby stars shifted into here include Vega and Sol."
+    "id": "leo",
+    "name": "Leo",
+    "declination": [-40, -5],
+    "longitude": [-15, 29],
+    "description": "Leo contains several nearby stars and its shape is unrecognizable. The nearby star of Gliese 205, which is not visible to the naked eye from Earth, is faintly visible here."
+  },
+  {
+    "id": "draco-ursa-minor",
+    "name": "Draco and Ursa Minor",
+    "declination": [-89, -41],
+    "longitude": [242, 282],
+    "description": "Ursa Minor fares worse than its larger sibling &mdash; the familiar shape of the &quot;dipper&quot; is nowhere to be seen. Draco's meandering body is the same shape, but its head is more triangular, as &nu; Draconis is relatively close to Sol."
+  },
+  {
+    "id": "centaurus-crux",
+    "name": "Centaurus and Crux",
+    "declination": [24, 60],
+    "longitude": [314, 356],
+    "description": "Centaurus contains several stars close to Sol, most famously &alpha; Centauri, which is now nowhere to be seen. Some parts of the centaur are relatively okay, some are distorted quite badly, and some are missing entirely. Crux fares even worse, with &gamma; Crucis being shifted into the centaur's lower torso."
   },
   {
     "id": "andromeda",
     "name": "Andromeda",
     "declination": [-48, -17],
     "longitude": [152, 197]
-  },
-  {
-    "id": "leo",
-    "name": "Leo",
-    "declination": [-40, -5],
-    "longitude": [-15, 23],
-    "description": "Leo contains several nearby stars and its shape is unrecognizable."
   },
   {
     "id": "virgo",
@@ -74,31 +88,17 @@
     "description": "Though the sideways stick figure is still visible, some of the individual stars (particularly &beta; Virginis) have shifted significantly, and Sirius makes a conspicuous appearance that draws attention away from Virgo itself."
   },
   {
-    "id": "centaurus-crux",
-    "name": "Centaurus and Crux",
-    "declination": [24, 58],
-    "longitude": [314, 356],
-    "description": "Centaurus contains several stars close to Sol, most famously &alpha; Centauri, which is now nowhere to be seen. Some parts of the centaur are relatively okay, some are distorted quite badly, and some are missing entirely. Crux fares even worse, with &gamma; Crucis being shifted into the centaur's lower torso."
-  },
-  {
-    "id": "draco-ursa-minor",
-    "name": "Draco and Ursa Minor",
-    "declination": [-84, -41],
-    "longitude": [242, 282],
-    "description": "Ursa Minor fares worse than its larger sibling. The familiar shape of the &quot;dipper&quot; is nowhere to be seen, and the constellation is not circumpolar. Draco's meandering body is the same shape, but its head is more triangular, as &nu; Draconis is relatively close to Sol."
+    "id": "aquarius",
+    "name": "Aquarius",
+    "declination": [8, 35],
+    "longitude": [175, 223]
   },
   {
     "id": "bootes-canes-venatici",
     "name": "Bo&ouml;tes and Canes Venatici",
     "declination": [-51, -9],
-    "longitude": [290, 318],
+    "longitude": [290, 320],
     "description": "Bo&ouml;tes is nearly on the opposite side of Sol from Erid, so even the nearby stars stay in the constellation &mdash; though its shape is distorted."
-  },
-  {
-    "id": "aquarius",
-    "name": "Aquarius",
-    "declination": [8, 32],
-    "longitude": [175, 223]
   },
   {
     "id": "taurus",
@@ -155,6 +155,13 @@
     "longitude": [10, 63]
   },
   {
+    "id": "sagittarius-corona-australis",
+    "name": "Sagittarius and Corona Australis",
+    "declination": [23, 52],
+    "longitude": [235, 268],
+    "description": "Every major asterism in these constellations &mdash; the &quot;teapot,&quot; Terebellum, and Corona Australis &mdash; is unrecognizable. Two pairs of stars which are clearly distinct from Earth (&sigma; Sagittarii and &tau; Sagittarii; &zeta; Sagittarii and &phi; Sagittarii) form visual doubles."
+  },
+  {
     "id": "orion",
     "name": "Orion",
     "declination": [-27, 5],
@@ -168,11 +175,18 @@
     "longitude": [1, 43]
   },
   {
-    "id": "sagittarius-corona-australis",
-    "name": "Sagittarius and Corona Australis",
-    "declination": [23, 52],
-    "longitude": [235, 266],
-    "description": "Every major asterism in these constellations &mdash; the &quot;teapot,&quot; Terebellum, and Corona Australis &mdash; is unrecognizable. Two pairs of stars which are clearly distinct from Earth (&sigma; Sagittarii and &tau; Sagittarii; &zeta; Sagittarii and &phi; Sagittarii) form visual doubles."
+    "id": "camelopardalis",
+    "name": "Camelopardalis",
+    "declination": [-88, -57],
+    "longitude": [103, 152],
+    "description": "The faint main asterism is completely overshadowed by the appearance of Capella."
+  },
+  {
+    "id": "gemini",
+    "name": "Gemini",
+    "declination": [-48, -21],
+    "longitude": [49, 81],
+    "description": "Most of the bright stars in Gemini are nearby, so the constellation is unrecognizable."
   },
   {
     "id": "auriga",
@@ -189,20 +203,6 @@
     "description": "Although Altair is shifted out of Aquila entirely, &gamma; Aquilae takes its place, so that alone is not what makes the constellation unrecognizable. &tau; Ceti is present in this constellation as well."
   },
   {
-    "id": "camelopardalis",
-    "name": "Camelopardalis",
-    "declination": [-88, -57],
-    "longitude": [110, 152],
-    "description": "Camelopardalis is Erid's southernmost constellation. Its faint main asterism is completely overshadowed by the appearance of Capella."
-  },
-  {
-    "id": "cepheus",
-    "name": "Cepheus",
-    "declination": [-68, -45],
-    "longitude": [198, 240],
-    "description": "Though Cepheus contains some distant stars, &alpha; Cephei and &gamma; Cephei are close enough that the pentagon is unrecognizable. &beta; Cassiopeiae is shifted into this constellation and outshines all the stars we know of as Cepheus."
-  },
-  {
     "id": "cassiopeia",
     "name": "Cassiopeia",
     "declination": [-75, -41],
@@ -210,11 +210,11 @@
     "description": "Though half of the famous &quot;W&quot; of Cassiopeia is intact, &epsilon; Cassiopeiae is in a significantly different spot, and &beta; Cassiopeiae is shifted out of the constellation entirely."
   },
   {
-    "id": "gemini",
-    "name": "Gemini",
-    "declination": [-48, -27],
-    "longitude": [49, 81],
-    "description": "Most of the bright stars in Gemini are nearby, so the constellation is unrecognizable."
+    "id": "cepheus",
+    "name": "Cepheus",
+    "declination": [-68, -45],
+    "longitude": [198, 240],
+    "description": "Though Cepheus contains some distant stars, &alpha; Cephei and &gamma; Cephei are close enough that the pentagon is unrecognizable. &beta; Cassiopeiae is shifted into this constellation and outshines all the stars we know of as Cepheus."
   },
   {
     "id": "monoceros-canis-minor",
@@ -229,6 +229,12 @@
     "declination": [19, 38],
     "longitude": [207, 238],
     "description": "Fomalhaut is shifted into here and outshines all the stars that form Capricornus."
+  },
+  {
+    "id": "aries",
+    "name": "Aries",
+    "declination": [-31, -10],
+    "longitude": [126, 150]
   },
   {
     "id": "lupus",
@@ -270,12 +276,6 @@
     "description": "Achernar is shifted into this constellation and outshines all its other stars."
   },
   {
-    "id": "aries",
-    "name": "Aries",
-    "declination": [-31, -15],
-    "longitude": [126, 150]
-  },
-  {
     "id": "canis-major",
     "name": "Canis Major",
     "declination": [3, 26],
@@ -309,6 +309,13 @@
     "description": "Lyra no longer has Vega, which renders it unremarkable."
   },
   {
+    "id": "coma-berenices",
+    "name": "Coma Berenices",
+    "declination": [-41, -19],
+    "longitude": [326, 340],
+    "description": "Coma Berenices is a small constellation; two of its three main stars have been shifted out of it, and the much brighter stars of Procyon and Denebola have been shifted in."
+  },
+  {
     "id": "indus",
     "name": "Indus",
     "declination": [51, 70],
@@ -334,36 +341,30 @@
     "longitude": [190, 207]
   },
   {
+    "id": "hydrus",
+    "name": "Hydrus",
+    "declination": [66, 77],
+    "longitude": [77, 128],
+    "description": "The two brightest stars in Hydrus are shifted out, leaving a small and faint constellation."
+  },
+  {
+    "id": "ara",
+    "name": "Ara",
+    "declination": [48, 62],
+    "longitude": [270, 294],
+    "description": "&beta; Hydri is shifted into this constellation, and &alpha; Arae appears displaced somewhat, but overall this constellation is relatively unaffected."
+  },
+  {
     "id": "pictor",
     "name": "Pictor",
     "declination": [47, 60],
     "longitude": [45, 69]
   },
   {
-    "id": "coma-berenices",
-    "name": "Coma Berenices",
-    "declination": [-41, -22],
-    "longitude": [326, 338],
-    "description": "Coma Berenices is a small constellation; two of its three main stars have been shifted out of it."
-  },
-  {
     "id": "vulpecula",
     "name": "Vulpecula",
     "declination": [-19, -10],
     "longitude": [219, 242]
-  },
-  {
-    "id": "pyxis",
-    "name": "Pyxis",
-    "declination": [14, 27],
-    "longitude": [23, 38]
-  },
-  {
-    "id": "ara",
-    "name": "Ara",
-    "declination": [50, 62],
-    "longitude": [270, 294],
-    "description": "&beta; Hydri is shifted into this constellation, and &alpha; Arae appears displaced somewhat, but overall this constellation is relatively unaffected."
   },
   {
     "id": "corona-borealis",
@@ -375,7 +376,19 @@
     "id": "apus",
     "name": "Apus",
     "declination": [67, 77],
-    "longitude": [293, 336]
+    "longitude": [293, 339]
+  },
+  {
+    "id": "columba",
+    "name": "Columba",
+    "declination": [26, 38],
+    "longitude": [66, 81]
+  },
+  {
+    "id": "microscopium",
+    "name": "Microscopium",
+    "declination": [39, 52],
+    "longitude": [215, 231]
   },
   {
     "id": "dorado",
@@ -388,12 +401,6 @@
     "name": "Piscis Austrinus",
     "declination": [36, 45],
     "longitude": [189, 210]
-  },
-  {
-    "id": "microscopium",
-    "name": "Microscopium",
-    "declination": [39, 52],
-    "longitude": [217, 231]
   },
   {
     "id": "norma",
@@ -409,23 +416,10 @@
     "description": "From Earth, Mensa is by far the faintest constellation: its brightest star, &alpha; Mensae, has magnitude 5.09. From Erid, &alpha; Mensae is not in Mensa; the brightest star is instead the much brighter &zeta; Doradus (combined magnitude 4.20)."
   },
   {
-    "id": "columba",
-    "name": "Columba",
-    "declination": [26, 38],
-    "longitude": [66, 77]
-  },
-  {
     "id": "musca",
     "name": "Musca",
     "declination": [54, 64],
     "longitude": [-17, 3]
-  },
-  {
-    "id": "hydrus",
-    "name": "Hydrus",
-    "declination": [69, 77],
-    "longitude": [77, 117],
-    "description": "The two brightest stars in Hydrus are shifted out, leaving a small and faint constellation."
   },
   {
     "id": "circinus",
